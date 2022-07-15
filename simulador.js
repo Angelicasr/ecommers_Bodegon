@@ -4,76 +4,76 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
 {
     id: 1,
-    title: "Ron Santa Teresa",
+    title: "gold label",
     price: 119,
     colors: [
     {
-        code: "black",
-        img: "/imagen/santa teresa.jpg",
+        code: "lightgray",
+        img: "imagen/gold label.png",
     },
     {
-        code: "darkblue",
-        img: "./img/air2.png",
+        code: "green",
+        img: "imagen/black label.png",
     },
     ],
 },
     {
     id: 2,
-    title: "Air Jordan",
+    title: "vodka absolut",
     price: 149,
     colors: [
     {
         code: "lightgray",
-        img: "./img/jordan.png",
+        img: "imagen/vodka absolut.jpg",
     },
     {
         code: "green",
-        img: "./img/jordan2.png",
+        img: "imagen/absolut raspbery.png",
     },
     ],
     },
     {
     id: 3,
-    title: "Blazer",
+    title: "ron",
     price: 109,
     colors: [
     {
         code: "lightgray",
-        img: "./img/blazer.png",
+        img: "imagen/ron diplomatico.png",
     },
     {
         code: "green",
-        img: "./img/blazer2.png",
+        img: "imagen/ron caldas.png",
     },
     ],
     },
     {
     id: 4,
-    title: "Crater",
+    title: "vinos",
     price: 129,
     colors: [
     {
         code: "black",
-        img: "./img/crater.png",
+        img: "imagen/vino concha y toro.png",
     },
     {
         code: "lightgray",
-        img: "./img/crater2.png",
+        img: "imagen/vino abadal.png",
     },
     ],
     },
     {
     id: 5,
-    title: "Hippie",
+    title: "cervezas",
     price: 99,
     colors: [
     {
         code: "gray",
-        img: "./img/hippie.png",
+        img: "imagen/cerveza-andes-cerveza-online-612382.png",
     },
     {
         code: "black",
-        img: "./img/hippie2.png",
+        img: "imagen/cerveza brahma.png",
     },
     ],
     },
@@ -100,7 +100,6 @@ item.addEventListener("click", () => {
     currentProductPrice.textContent = "$" + choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
 
-    //assing new colors
     currentProductColors.forEach((color, index) => {
         color.style.backgroundColor = choosenProduct.colors[index].code;
     });
