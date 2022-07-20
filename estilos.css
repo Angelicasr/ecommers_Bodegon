@@ -44,11 +44,12 @@ section {
 }
 
 
-
 .slider {
     background-color: #4c0909;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     overflow: hidden;
+    height: 1000px;
+    margin-top: 130px;
 }
 
 .sliderWrapper {
@@ -74,6 +75,8 @@ section {
 
 .sliderImg {
     z-index: 1;
+    width: 600px;
+    height: 600px;
 }
 
 .sliderTitle {
@@ -94,7 +97,7 @@ section {
     font-size: 60px;
     font-weight: 300;
     text-align: center;
-    color: white;
+    color: rgb(31, 22, 22);
     border: 1px solid gray;
     z-index: 1;
 }
@@ -305,19 +308,6 @@ h1{
     color: white;
     text-align: center;
     margin-bottom: auto;
-}
-
-.boton1{
-    grid-row-start: 2;
-    grid-column: 4/5;
-    margin-top: 200px;
-    margin-left: 100px;
-    padding-left: 30px;
-}
-.boton2{
-    grid-row-start: 2;
-    margin-top: 200px;
-    grid-column: 6/9;
 }
 
 .navBottom {
