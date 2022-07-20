@@ -24,11 +24,11 @@ const products = [
     colors: [
     {
         code: "lightgray",
-        img: "imagen/vodka absolut.jpg",
+        img: "/imagen/vodka absolut.jpg",
     },
     {
         code: "green",
-        img: "imagen/absolut raspbery.png",
+        img: "/imagen/absolut raspbery.png",
     },
     ],
     },
@@ -39,11 +39,11 @@ const products = [
     colors: [
     {
         code: "lightgray",
-        img: "imagen/ron diplomatico.png",
+        img: "/imagen/ron diplomatico.png",
     },
     {
         code: "green",
-        img: "imagen/ron caldas.png",
+        img: "/imagen/ron caldas.png",
     },
     ],
     },
@@ -54,11 +54,11 @@ const products = [
     colors: [
     {
         code: "black",
-        img: "imagen/vino concha y toro.png",
+        img: "/imagen/vino concha y toro.png",
     },
     {
         code: "lightgray",
-        img: "imagen/vino abadal.png",
+        img: "/imagen/vino abadal.png",
     },
     ],
     },
@@ -69,11 +69,11 @@ const products = [
     colors: [
     {
         code: "gray",
-        img: "imagen/cerveza-andes-cerveza-online-612382.png",
+        img: "/imagen/cerveza-andes-cerveza-online-612382.png",
     },
     {
         code: "black",
-        img: "imagen/cerveza brahma.png",
+        img: "/imagen/cerveza brahma.png",
     },
     ],
     },

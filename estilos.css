@@ -20,7 +20,7 @@ body{
 }
 
 section {
-    height: 900px;
+    height: 1200px;
 
 }
 .containerP{
@@ -154,6 +154,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    height: 500px;
 }
 
 .feature {
@@ -613,7 +614,7 @@ audio{
     display: contents;
     max-width: 1100px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 1800px;
     
 }
         
