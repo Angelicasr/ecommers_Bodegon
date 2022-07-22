@@ -23,12 +23,7 @@ section {
     height: 1200px;
 
 }
-.containerP{
-    width: 100%;
-    max-width: 1600px;
 
-
-}
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -48,7 +43,6 @@ section {
     background-color: #4c0909;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     overflow: hidden;
-    height: 1000px;
     margin-top: 130px;
 }
 
@@ -97,8 +91,7 @@ section {
     font-size: 60px;
     font-weight: 300;
     text-align: center;
-    color: rgb(31, 22, 22);
-    border: 1px solid gray;
+    color: rgb(226, 202, 202);
     z-index: 1;
 }
 
@@ -109,7 +102,6 @@ section {
     font-size: 30px;
     font-weight: 900;
     color: white;
-    border: 1px solid gray;
     background-color: black;
     z-index: 1;
     cursor: pointer;
@@ -157,7 +149,6 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    height: 500px;
 }
 
 .feature {
@@ -190,6 +181,72 @@ section {
     position: relative;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
+
+
+.payment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 1350px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+.payButton {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    margin-top: 500px;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+
+.payTitle {
+    font-size: 20px;
+    color: lightgray;
+        }
+label {
+    font-size: 14px;
+    font-weight: 300;
+    }
+.payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+        }
+.payInput::placeholder {
+    color: rgb(163, 163, 163);
+    }
+.cardIcons {
+    display: flex;
+        }
+.cardIcon {
+    margin-right: 10px;
+    height: 25px;
+    right: 10px;
+        }
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+        }
+
+.sm {
+    width: 30%;
+    }
+
 .payButton {
     position: absolute;
     height: 40px;
@@ -201,6 +258,104 @@ section {
     background-color: #369e62;
     color: white;
     border: none;
+    cursor: pointer;
+        }
+.close {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: gray;
+        color: white;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 2px;
+        }
+.productImg {
+    margin-top: 25px;
+    width: 600px;
+    height: 700px;
+    }
+    .productDetails {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 40%;
+        padding: 50px;
+        }
+
+    .productTitle {
+        font-size: 75px;
+        font-weight: 900;
+        }
+    .productDesc {
+        font-style: 24px;
+        color: gray;
+        }
+    .colors, .sizes {
+        display: flex;
+        margin-bottom: 20px;
+        }
+
+    .color {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        background-color: black;
+        margin-right: 10px;
+        cursor: pointer;
+        }
+    .color:last-child {
+        background-color: darkblue;
+        }
+    .size {
+        padding: 5px 20px;
+        border: 1px solid black;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        }
+    .productButton {
+        float: right;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        }
+    .productButton:hover {
+        background-color: white;
+        color: black;
+        }
+
+    .newSeason {
+    display: flex;
+        }
+    .nsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        }
+        
+    .nsImg {
+    width: 100%;
+    height: 500px;
+        }
+    .nsTitle {
+    font-size: 40px;
+    }
+    
+    .nsButton {
+    padding: 15px;
+    font-weight: 600;
     cursor: pointer;
     }
 
@@ -258,49 +413,6 @@ nav a:hover{
 
 }
 
-#hero{
-    background-image:url("/imagen/alcohol-gea9c4cf41_1920.jpg");
-    animation: movimiento 10s  infinite linear alternate;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column ;
-    height: 100vh;
-    color: white;
-    filter: grayscale(20%);
-    margin: 130px auto 0;
-}
-@keyframes movimiento{
-    from{
-        background-position: bottom left;
-    } to{
-        background-position: top right;
-    }
-}
-
-
-
-button{
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid rgb(105, 83, 4);
-    box-shadow: 0.125rem 0.125rem 0.625rem rgb(133, 106, 17);
-    color: aliceblue;
-    background-color: rgb(104, 34, 34);
-}
-
-button:hover{
-    background-color: rgb(100, 22, 22) ;
-}
-
-
 h1{
     grid-row-start: 1;
     margin-top: 40px;
@@ -324,71 +436,9 @@ h1{
 }
 
 
-
-/*segundo section*/
-.reserva1{
-    font-weight: 400;
-    font-size: 40px;
-
-}
-
-.imagen1{
+img{
     width: 100%;
-    height: auto;
-    grid-column: 7/13;
-    opacity: .8;
-}
-
-.img {
-    width: 100%;
-    max-width: 600px;
-}
-
-.textos{
-    grid-column: 2/7;
-    padding-right: 5px;
-    text-align: justify;
-    color: #fff;
-}
-
-#Reserva{
-    height: 80vh;
-}
-
-.Somos{
-    font-weight: 300;
-    font-size: 30px;
-}
-
-
-/*Tercer section*/
-
-#NuestrasUbicaciones{ 
-    height:80vh;
-    background: linear-gradient(180deg, rgb(10, 9, 9) 50%, rgb(252, 248, 248) 50%);
-    }
-    
-    .Nuestras{
-        grid-column: 1/-1;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .carta{
-    width: 30%;
-    background: rgb(183, 177, 177);
-    box-shadow: 0 0 10px rgb(226, 204, 204) ;
-    overflow: hidden;
-    height: 180px;
-    padding: 20px 10px;
-    text-align: center;
-    }
-    img{
-        width: 100%;
-        height: 100%;
+    height: 100%;
     }
 /*Cuarto section*/
 
