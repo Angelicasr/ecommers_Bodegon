@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/3a643f876f.js" crossorigin="anonymous"></script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>BODEGON</title>
 
 </head>
@@ -25,8 +25,30 @@
         <nav class="menu"> 
             <a href="/index.html">Home </a>
             <a href="#section1">Productos</a>
-            <a href="#onlineshop1">Carrito <i class="fas fa-shopping-cart"></i> </a>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- CART  -->
+                <div class="cart">
+                <h2 class="cart-title">Carrito</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button3" class="btn-buy">Comprar</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
         </nav>
+
     </div>
     <div class="navBottom">
         <h3 class="menuItem">WHISKY</h3>
@@ -49,34 +71,34 @@
             <h1 class="sliderTitle">GOLD LABEL </h1>
             <h2 class="sliderPrice">$4800</h2>
             <a href="#product">
-                <button class="buyButton">COMPRAR</button>
+                <i class="bx bx-shopping-bag add-cart">COMPRAR</i>
             </a>
         </div>
         <div class="sliderItem">
             <img src="/imagen/absolud_vodka.png" alt="" class="sliderImg">
             <div class="sliderBg"></div>
-            <h1 class="sliderTitle">BLACK LABEL</h1>
+            <h1 class="sliderTitle">VODKA ABSOLUT</h1>
             <h2 class="sliderPrice">$3600</h2>
             <a href="#product">
-                <button class="buyButton">COMPRAR</button>
+                <button class="bx bx-shopping-bag add-cart">COMPRAR</button>
             </a>
         </div>
         <div class="sliderItem">
             <img src="/imagen/ron diplomatico.png" alt="" class="sliderImg">
             <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Ron Diplomaticos</h1>
+            <h1 class="sliderTitle">RON  DIPLOMATICO</h1>
             <h2 class="sliderPrice">$10900</h2>
             <a href="#product">
-                <button class="buyButton">COMPRAR</button>
+                <button class="bx bx-shopping-bag add-cart">COMPRAR</button>
             </a>
         </div>
         <div class="sliderItem">
             <img src="/imagen/vino concha y toro.png" alt="" class="sliderImg">
             <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Vino concha y toro</h1>
+            <h1 class="sliderTitle">VINO CASILLERO DEL DIABLO</h1>
             <h2 class="sliderPrice">$1290</h2>
             <a href="#product">
-                <button class="buyButton">COMPRAR</button>
+                <i class="bx bx-shopping-bag add-cart">COMPRAR</i>
             </a>
         </div>
         <div class="sliderItem">
@@ -85,7 +107,7 @@
             <h1 class="sliderTitle">Cerveza </h1>
             <h2 class="sliderPrice">$199</h2>
             <a href="#product">
-                <button class="buyButton">COMPRAR</button>
+                <button class="bx bx-shopping-bag add-cart">COMPRAR</button>
             </a>
         </div>
     </div>
@@ -135,25 +157,25 @@
     </div>
 </section>
 
-<div class="payment">
+<div class="payment" id="payment">
     <h1 class="payTitle">Informacion Personal</h1>
     <label>Nombres</label>
-    <input type="text" placeholder="Maria Hernandez" class="payInput">
+    <input type="text" placeholder="Maria Hernandez" class="payInput" id="paynombre">
     <label>numero de Telefono</label>
-    <input type="text" placeholder="+54 1122512382" class="payInput">
+    <input type="text" placeholder="+54 1122512382" class="payInput" id="paynumero"> 
     <label>Direccion</label>
-    <input type="text" placeholder="Honduras 4413" class="payInput">
+    <input type="text" placeholder="Honduras 4413" class="payInput" id="paydireccion">
     <h1 class="payTitle">Informacion de Tarjeta</h1>
-    <input type="password" class="payInput" placeholder="Numero de Tarjeta">
+    <input type="password" class="payInput" id="paytarjeta" placeholder="Numero de Tarjeta">
     <div class="cardInfo">
         <input type="text" placeholder="mm" class="payInput sm">
         <input type="text" placeholder="yyyy" class="payInput sm">
         <input type="text" placeholder="cvv" class="payInput sm">
     </div>
-    <button class="payButton"> Comprar </button>
+    <button href="#" class="payButton"> Comprar </button>
     <span class="close">X</span>
 </div>
-</div>
+</div> 
 
 <!--========================================================== -->
                     <!-- menu-->
@@ -230,7 +252,7 @@
                             <span>3200$</span>
                         </div>
                         <div class="cart-like"> 
-                            <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                            <i class="bx bx-shopping-bag add-cart">COMPRAR</i>
                             <a href="#"> <i class="far fa-heart"></i></a>
                         
                         </div>
@@ -253,7 +275,7 @@
                             <span>1800$</span>
                         </div>
                         <div class="cart-like"> 
-                            <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                            <i class="bx bx-shopping-bag add-cart">COMPRAR</i>
                             <a href="#"> <i class="far fa-heart"></i></a>
                         
                         </div>
@@ -275,7 +297,7 @@
                             <span>7200$</span>
                         </div>
                         <div class="cart-like"> 
-                            <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                             <a href="#"> <i class="far fa-heart"></i></a>
                         
                         </div>
@@ -297,7 +319,7 @@
                             <span>3300$</span>
                         </div>
                         <div class="cart-like"> 
-                            <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                             <a href="#"> <i class="far fa-heart"></i></a>
                         
                         </div>
@@ -318,7 +340,7 @@
                             <span>3300$</span>
                         </div>
                         <div class="cart-like"> 
-                            <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                             <a href="#"> <i class="far fa-heart"></i></a>
                         
                         </div>
@@ -344,7 +366,7 @@
                                 <span>340$</span>
                             </div>
                             <div class="cart-like"> 
-                                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                                 <a href="#"> <i class="far fa-heart"></i></a>
                             
                             </div>
@@ -367,7 +389,7 @@
                                 <span>1320$</span>
                             </div>
                             <div class="cart-like"> 
-                                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                                 <a href="#"> <i class="far fa-heart"></i></a>
                             
                             </div>
@@ -389,7 +411,7 @@
                                 <span>7200$</span>
                             </div>
                             <div class="cart-like"> 
-                                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                                 <a href="#"> <i class="far fa-heart"></i></a>
                             
                             </div>
@@ -411,7 +433,7 @@
                                 <span>3300$</span>
                             </div>
                             <div class="cart-like"> 
-                                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                                 <a href="#"> <i class="far fa-heart"></i></a>
                             
                             </div>
@@ -432,7 +454,7 @@
                                 <span>3300$</span>
                             </div>
                             <div class="cart-like"> 
-                                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"> <i class='bx bx-shopping-bag add-cart'></i></a>
                                 <a href="#"> <i class="far fa-heart"></i></a>
                             
                             </div>
