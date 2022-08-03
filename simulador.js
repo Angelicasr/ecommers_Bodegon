@@ -157,11 +157,11 @@ const products = [
     colors: [
     {
         code: "lightgray",
-        img: "imagen/gold label.png",
+        img: "/imagen/gold label.png",
     },
     {
         code: "green",
-        img: "imagen/black label.png",
+        img: "/imagen/black label.png",
     },
     ],
 },
@@ -172,7 +172,7 @@ const products = [
     colors: [
     {
         code: "lightgray",
-        img: "/imagen/vodka absolut.jpg",
+        img: "/imagen/absolud_vodka.png",
     },
     {
         code: "green",
