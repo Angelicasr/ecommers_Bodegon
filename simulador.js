@@ -94,6 +94,13 @@ function handle_removeCartItem() {
     update();
 }
 
+function mostrar () {
+
+    swal('Esta seguro de realizar el pedido', ' SOLO VENTA A MAYORES DE EDAD ', 'success');
+
+
+}
+
 function handle_changeItemQuantity() {
     if (isNaN(this.value) || this.value < 1) {
     this.value = 1;
@@ -105,12 +112,12 @@ function handle_changeItemQuantity() {
 
 function handle_buyOrder() {
     if (itemsAdded.length <= 0) {
-    alert("There is No Order to Place Yet! \nPlease Make an Order first.");
+    alert("¡Aún no hay ningún pedido para realizar! \n Haga un pedido primero.");
     return;
     }
     const cartContent = cart.querySelector(".cart-content");
     cartContent.innerHTML = "";
-    alert("Your Order is Placed Successfully :)");
+    alert("Su pedido se realizo con éxitoy :)");
     itemsAdded = [];
 
     update();
