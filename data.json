@@ -1,0 +1,77 @@
+[
+    {
+    "id": 1,
+    "title": "gold label",
+    "price": 119,
+    "colors": [
+        {
+        "code": "lightgray",
+        "img": "/imagen/gold label.png"
+        },
+        {
+        "code": "green",
+        "img": "/imagen/black label.png"
+        }
+    ]
+    },
+    {
+    "id": 2,
+    "title": "vodka absolut",
+    "price": 149,
+    "colors": [
+        {
+        "code": "lightgray",
+        "img": "/imagen/absolud_vodka.png"
+        },
+        {
+        "code": "green",
+        "img": "/imagen/absolut_raspbery-removebg-preview.png"
+        }
+    ]
+    },
+    {
+    "id": 3,
+    "title": "ron",
+    "price": 109,
+    "colors": [
+        {
+    "code": "lightgray",
+    "img": "/imagen/ron diplomatico.png"
+        },
+        {
+        "code": "green",
+        "img": "/imagen/ron caldas.png"
+        }
+    ]
+    },
+    {
+    "id": 4,
+    "title": "vinos",
+    "price": 129,
+    "colors": [
+        {
+        "code": "black",
+        "img": "/imagen/vino concha y toro.png"
+        },
+        {
+        "code": "lightgray",
+        "img": "/imagen/vino abadal.png"
+        }
+    ]
+    },
+    {
+    "id": 5,
+    "title": "cervezas",
+    "price": 99,
+    "colors": [
+        {
+        "code": "gray",
+        "img": "/imagen/cerveza-andes-cerveza-online-612382.png"
+        },
+        {
+        "code": "black",
+        "img": "/imagen/cerveza brahma.png"
+        }
+    ]
+    }
+]

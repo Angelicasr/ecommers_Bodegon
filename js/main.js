@@ -156,6 +156,21 @@ function CartBoxComponent(title, price, imgSrc) {
     </div>`;
 }
 
+const getProducts = async () =>
+{
+    try
+    {
+        const response = await fetch("/data.json");
+        const data = await response.json();
+        console.log("data from json", data);
+        loadProducts(data);
+    }
+    catch(error)
+    {
+        console.log(error);
+    }
+}
+getProducts();
 const products = [
 {
     id: 1,
