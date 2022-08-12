@@ -474,9 +474,9 @@ label {
         cursor: pointer;
     }
     
-    /* SHOP SECTION  */
+    
     .shop{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .section-title{
         font-style: 1.5rem;
@@ -501,7 +501,7 @@ label {
         width: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
-        margin-bottom: .5rem;
+        margin-bottom: .7rem;
     }
     .product-title{
         font-size: 1.1rem;
@@ -512,7 +512,7 @@ label {
     .product-price{
         font-weight: 500;
     }
-    .add-cart{
+    .add-cart {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -523,6 +523,12 @@ label {
     }
     .add-cart:hover{
         background-color: hsl(249, 32%, 17%);
+    }
+
+    .container1{
+        max-width: 1068px;
+        margin: auto;
+        width: 100%;
     }
 
 

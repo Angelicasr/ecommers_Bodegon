@@ -4,6 +4,7 @@ const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector("#cart-close");
 
+
 cartIcon.addEventListener("click", () => {
     cart.classList.add("active");
 });
@@ -27,6 +28,8 @@ function update() {
     addEvents();
     updateTotal();
 }
+
+
 
 function addEvents() {
 
@@ -105,7 +108,7 @@ function handle_changeItemQuantity() {
     if (isNaN(this.value) || this.value < 1) {
     this.value = 1;
     }
-  this.value = Math.floor(this.value); // to keep it integer
+    this.value = Math.floor(this.value); 
 
     update();
 }
