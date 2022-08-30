@@ -57,9 +57,9 @@ let itemsAdded = [];
 
 function handle_addCartItem() {
     let product = this.parentElement;
-    let title = product.querySelector(".sliderTitle").innerHTML;
-    let price = product.querySelector(".sliderPrice").innerHTML;
-    let imgSrc = product.querySelector(".sliderImg").src;
+    let title = product.querySelector(".product-title").innerHTML;
+    let price = product.querySelector(".product-price").innerHTML;
+    let imgSrc = product.querySelector(".product-img").src;
     console.log(title, price, imgSrc);
 
     let newToAdd = {
@@ -70,7 +70,7 @@ function handle_addCartItem() {
 
 
     if (itemsAdded.find((el) => el.title == newToAdd.title)) {
-    alert("This Item Is Already Exist!");
+    alert("¡Este artículo ya existe!");
     return;
     } else {
     itemsAdded.push(newToAdd);
@@ -177,8 +177,8 @@ getProducts();
 const products = [
 {
     id: 1,
-    title: "gold label",
-    price: 119,
+    title: "Gold Label",
+    price: 4800,
     colors: [
     {
         code: "lightgray",
@@ -192,8 +192,8 @@ const products = [
 },
     {
     id: 2,
-    title: "vodka absolut",
-    price: 149,
+    title: "Vodka Absolut",
+    price: 4500,
     colors: [
     {
         code: "lightgray",
@@ -207,8 +207,8 @@ const products = [
     },
     {
     id: 3,
-    title: "ron",
-    price: 109,
+    title: "Ron",
+    price: 10999,
     colors: [
     {
         code: "lightgray",
@@ -222,8 +222,8 @@ const products = [
     },
     {
     id: 4,
-    title: "vinos",
-    price: 129,
+    title: "Vinos",
+    price: 1290,
     colors: [
     {
         code: "black",
@@ -237,8 +237,8 @@ const products = [
     },
     {
     id: 5,
-    title: "cervezas",
-    price: 99,
+    title: "Cervezas",
+    price: 250,
     colors: [
     {
         code: "gray",

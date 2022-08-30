@@ -20,9 +20,13 @@ body{
 }
 
 section {
-    height: 1200px;
+    height: 1000px;
 
 
+}
+
+.section1{
+    height: 800px;
 }
 
 :root{
@@ -30,6 +34,7 @@ section {
     --sec-color: #4946fd;
     --text-color: #171427;
     --bg-color: #fff;
+    
 }
 ::selection{
     color: var(--text-color);
@@ -53,9 +58,10 @@ section {
 
 .slider {
     background-color: #4c0909;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%); 
     overflow: hidden;
     margin-top: 130px;
+    position: relative;
 }
 
 .sliderWrapper {
@@ -65,11 +71,14 @@ section {
 }
 
 .sliderItem {
-    width: 100vw;
+
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .sliderBg {
@@ -89,10 +98,10 @@ section {
     position: absolute;
     top: 10%;
     right: 10%;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     text-align: center;
-    color: white;
+    color: rgb(154, 139, 139);
     z-index: 1;
 }
 
@@ -103,7 +112,7 @@ section {
     font-size: 60px;
     font-weight: 300;
     text-align: center;
-    color: rgb(226, 202, 202);
+    color: rgb(20, 17, 17);
     z-index: 1;
 }
 
@@ -111,12 +120,15 @@ section {
     position: absolute;
     top: 50%;
     right: 10%;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 600;
     color: white;
-    background-color: black;
+    background-color: rgb(62, 56, 56);
     z-index: 1;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
 
 .buyButton:hover {
@@ -200,7 +212,7 @@ section {
     height: 500px;
     background-color: white;
     position: absolute;
-    top: 1350px;
+    top: 650px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -259,19 +271,6 @@ label {
     width: 30%;
     }
 
-.payButton {
-    position: absolute;
-    height: 40px;
-    bottom: -40;
-    width: 100%;
-    left: 0;
-    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
-    background-color: #369e62;
-    color: white;
-    border: none;
-    cursor: pointer;
-        }
 .close {
         width: 20px;
         height: 20px;
@@ -287,9 +286,9 @@ label {
         padding: 2px;
         }
 .productImg {
-    margin-top: 25px;
+    margin-top:135px;
     width: 600px;
-    height: 700px;
+    height: 600px;
     }
     .productDetails {
         position: absolute;
@@ -302,6 +301,7 @@ label {
     .productTitle {
         font-size: 75px;
         font-weight: 900;
+        color: #211f1f;
         }
     .productDesc {
         font-style: 24px;
@@ -386,7 +386,7 @@ label {
         height: 100vh;
         overflow-y: auto;
         overflow-x: hidden;
-        padding: 20px;
+        padding: 10px;
         background-color: var(--bg-color);
         box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
         border: 1px solid var(--main-color);
@@ -404,7 +404,7 @@ label {
     }
     .cart-box{
         display: grid;
-        grid-template-columns: 32% 50% 18%;
+        grid-template-columns: 28% 50% 28%;
         align-items: center;
         gap: 1rem;
         margin-top: 1rem;
@@ -420,18 +420,20 @@ label {
         row-gap: .5rem;
     }
     .cart-product-title{
-        font-size: 1rem;
+        font-size: .9rem;
         text-transform: uppercase;
     }
     .cart-price{
-        font-weight: 500;
+        font-weight: 700;
+        text-align: center;
     }
     .cart-quantity{
         border: 1px solid var(--text-color);
         outline-color: var(--main-color);
-        width: 2.4rem;
+        width: 2.6rem;
         text-align: center;
         font-size: 1rem;
+        padding: 1px;
     }
     .cart-remove{
         font-size: 24px;
@@ -476,7 +478,7 @@ label {
     
     
     .shop{
-        margin-top: 3rem;
+        margin-top: 1px;
     }
     .section-title{
         font-style: 1.5rem;
@@ -488,9 +490,11 @@ label {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, auto));
         gap: 1.5rem;
+    
     }
     .product-box{
         position: relative;
+        margin-bottom: 5rem;
     }
     .product-box:hover{
         padding: 10px;
@@ -504,10 +508,11 @@ label {
         margin-bottom: .7rem;
     }
     .product-title{
-        font-size: 1.1rem;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: .5rem;
+        margin-bottom: .3rem;
+    
     }
     .product-price{
         font-weight: 500;
@@ -631,6 +636,7 @@ img{
     display: flex;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .imagen-slider{
@@ -865,6 +871,7 @@ z-index: 1;
     font-size: 70px;
     text-transform: uppercase;
     text-shadow: rgb(60, 20, 20);
+    color: #4c0909;
 }
 
 .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .icon{
@@ -1094,7 +1101,20 @@ margin: 5px 0px;
 }
     /*Responsive*/
 
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1080px){
+        .nav{
+        padding: 15px;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 2rem;
+    }
         .containerP{
             width: auto;
         }
@@ -1214,8 +1234,23 @@ margin: 5px 0px;
         #carrusel{
             width: 75%;
         }
+        .nav{
+            padding: 11px;
+        }
+        .logo{
+            font-size: 1rem;
+        }
+        .cart{
+            width: 320px;
+        }
     }
     @media screen and (max-width: 480px){
+        .shop{
+            margin-top: 1rem;
+        }
+        .cart{
+            width: 280px;
+        }
         nav{
             padding: 20px;
         }
